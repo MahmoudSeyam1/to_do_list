@@ -1,0 +1,67 @@
+body {
+  background-color: antiquewhite;
+}
+.App {
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 50px auto;
+  padding: 20px;
+  width: 400px;
+  height: 500px;
+  background-color: bisque;
+}
+.App h1{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 64, 142);
+}
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  top: 40px ;
+  height: 400px;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.todo-container ul li {
+  width: 220px;
+  list-style-type: "👉";
+  cursor: pointer;
+}
+.todo-container .input-btn-container {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.todo-container input {
+  padding: 10px;
+  font-size: 18px;
+  bottom: 0;
+}
+.todo-container button{
+  cursor: pointer;
+  background-color: burlywood;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  opacity: .7;
+  font-weight: bold;
+}
+.todo-container button:hover {
+  opacity: 1;
+}
+.done{
+  text-decoration: line-through;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.delete-item {
+  cursor: pointer;
+}
